@@ -1,17 +1,13 @@
 #include<iostream>
 using namespace std;
-int sum,pre,prec; 
-int f(int n){
-	f(1)== 1 ;return pre;
-	f(2)== 2 ;return prec;
-	for(int i=2;i<n;i++){
-		sum==f(2)+f(1);
-		pre==f(2);
-		prec==sum;	
-}
-} 
+long long a[50],k;
 int main()
 {
-	cout<<f(3);
-	
+cin>>k;
+a[1]=1;a[2]=1;
+for(int i=3;i<=k;i++) a[i]=a[i-1]+a[i-2];
+cout<<a[k];
+return 0;
+
+
 }
